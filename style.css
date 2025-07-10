@@ -63,7 +63,7 @@ body {
 .shanda2 {
   position: absolute;
   left: 1in;
-  top: 0px; /* change this number to move it vertically */
+  top: -50px; /* change this number to move it vertically */
   height: 1100px; /* increase this number to make it bigger */
 }
 
