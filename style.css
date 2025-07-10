@@ -64,7 +64,7 @@ body {
   position: absolute;
   left: 1.5in;
   top: -150px; /* change this number to move it vertically */
-  height: 1100px; /* increase this number to make it bigger */
+  height: 1250px; /* increase this number to make it bigger */
 }
 
 .logo {
@@ -76,7 +76,7 @@ body {
 
 .shanda {
   position: absolute;
-  bottom: -100%;
+  bottom: -125%;
   left: 50%;
   transform: translateX(-50%);
   height: 500px;
