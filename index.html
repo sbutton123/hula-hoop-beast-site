@@ -1,96 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hula Hoop Beast</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Hula Hoop Beast Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background-image: url('background.png');
+      font-family: 'Open Sans', sans-serif;
+      background: url('background.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
       color: black;
       text-align: center;
     }
-
     nav {
       background-color: #222;
       padding: 15px 0;
-      display: flex;
-      justify-content: center;
     }
-
     nav a {
       color: white;
+      text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
-      text-decoration: none;
-      font-family: 'Roboto', sans-serif;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .title {
+    h1 {
       font-family: 'Bangers', cursive;
-      font-size: 48px;
-      margin-top: 20px;
+      font-size: 3.5rem;
+      margin-top: 30px;
     }
-
-    .hero {
+    .main-content {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin: 40px auto 20px;
-      max-width: 1200px;
-    }
-
-    .side-img {
-      flex: 1;
-      min-width: 200px;
-      max-width: 300px;
-    }
-
-    .side-img img {
-      width: 100%;
-      height: auto;
-    }
-
-    .content {
-      flex: 2;
-      max-width: 600px;
-      margin: 0 20px;
-    }
-
-    .intro-text {
-      font-style: italic;
-      font-weight: 600;
-      font-size: 16px;
+      align-items: center;
+      flex-direction: column;
       margin-top: 20px;
-      line-height: 1.6;
     }
-
-    .bottom-img {
+    .intro-text {
+      max-width: 800px;
+      font-size: 1.4rem;
+      font-style: italic;
       margin: 30px auto;
-      max-width: 300px;
     }
-
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .image-row img {
+      max-height: 350px;
+    }
+    .bottom-img {
+      margin-top: 40px;
+    }
     .bottom-img img {
-      width: 100%;
-      height: auto;
+      max-height: 450px;
     }
   </style>
 </head>
-
 <body>
   <nav>
     <a href="#">Home</a>
@@ -102,27 +71,21 @@
     <a href="#">Products</a>
   </nav>
 
-  <h1 class="title">UNLEASH YOUR INNER BEAST!</h1>
+  <h1>UNLEASH YOUR INNER BEAST!</h1>
 
-  <div class="hero">
-    <div class="side-img">
-      <img src="shanda.png" alt="Shanda Juggling">
-    </div>
-
-    <div class="content">
-      <div class="intro-text">
-        Welcome to Hula Hoop Beast — where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let's hoop!
-      </div>
-    </div>
-
-    <div class="side-img">
-      <img src="logo.png" alt="Hula Hoop Beast Logo">
-    </div>
+  <div class="image-row">
+    <img src="shanda2.png" alt="Shanda Juggling">
+    <img src="shanda.png" alt="Shanda Performing">
+    <img src="logo.png" alt="Hula Hoop Beast Logo">
   </div>
 
-  <div class="bottom-img">
-    <img src="shanda2.png" alt="Shanda Performing">
+  <div class="main-content">
+    <p class="intro-text">
+      Welcome to Hula Hoop Beast — where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let’s hoop!
+    </p>
+    <div class="bottom-img">
+      <img src="shanda3.png" alt="Shanda Hooping">
+    </div>
   </div>
 </body>
-
 </html>
