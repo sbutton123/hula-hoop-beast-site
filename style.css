@@ -1,32 +1,84 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000;
 }
 
-/* Nav styling remains the same */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-nav li {
-    display: inline;
-    margin: 0 15px;
+.navbar li {
+  margin: 0 15px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 100px 40px;
+  min-height: 100vh;
+}
+
+.intro-content {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Bangers', cursive;
+}
+
+.intro-content h1 {
+  font-size: 3em;
+  margin-bottom: 1in;
+  font-family: 'Bangers', cursive;
+}
+
+.intro-content p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  font-family: 'Bangers', cursive;
+}
+
+.shanda2 {
+  position: absolute;
+  left: 1in;
+  bottom: 20%;
+  height: 300px;
+}
+
+.logo {
+  position: absolute;
+  right: 2in;
+  bottom: 20%;
+  height: 250px;
+}
+
+.shanda {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 280px;
 }
