@@ -81,3 +81,34 @@ body {
   transform: translateX(-50%);
   height: 500px;
 }
+/* For tablets and phones */
+@media (max-width: 768px) {
+  .intro-content {
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  .intro-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .intro-content p {
+    font-size: 1em;
+  }
+
+  .shanda2,
+  .shanda,
+  .logo {
+    display: none;  /* Hide huge images on small screens */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+}
