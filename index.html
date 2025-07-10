@@ -13,7 +13,6 @@
       margin: 0;
       padding: 0;
       font-family: sans-serif;
-      text-align: center;
       color: #000;
       background: url('background.png') no-repeat center center fixed;
       background-size: cover;
@@ -21,44 +20,63 @@
 
     h1 {
       font-family: 'Bangers', cursive;
-      font-size: 3rem;
-      margin-top: 30px;
+      font-size: 4rem;
+      margin: 20px 0 10px;
+      text-align: center;
     }
 
     .images {
       display: flex;
       justify-content: center;
-      align-items: flex-end;
-      gap: 50px;
+      align-items: center;
+      gap: 60px;
       flex-wrap: wrap;
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     #logo {
-      width: 400px;
+      width: 500px;
       max-width: 40vw;
     }
 
     #shanda {
-      width: 280px;
+      width: 320px;
       max-width: 30vw;
     }
 
     .welcome {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: rgba(255, 255, 255, 0.0); /* transparent box for text */
+      max-width: 1000px;
+      margin: 20px auto 60px;
+      padding: 0 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.0);
     }
 
     .welcome h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
 
     .welcome p {
-      font-size: 1rem;
+      font-size: 1.15rem;
       line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      #logo, #shanda {
+        max-width: 80vw;
+      }
+
+      .welcome p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
     }
   </style>
 </head>
