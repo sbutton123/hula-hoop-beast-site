@@ -70,7 +70,7 @@ body {
 .logo {
   position: absolute;
   right: 1in;
-  bottom: 20%;
+  bottom: -50%;
   height: 700px;
 }
 
