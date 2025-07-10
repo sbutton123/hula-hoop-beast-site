@@ -63,8 +63,8 @@ body {
 .shanda2 {
   position: absolute;
   left: 1in;
-  bottom: 20%;
-  height: 600px;
+  top: 300px; /* change this number to move it vertically */
+  height: 320px; /* increase this number to make it bigger */
 }
 
 .logo {
