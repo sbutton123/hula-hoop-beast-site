@@ -1,46 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  color: #000;
   background: url('background.png') no-repeat center center fixed;
   background-size: cover;
+  color: #111;
   text-align: center;
 }
 
-h1 {
-  font-family: 'Bangers', cursive;
-  font-size: 3em;
-  margin-top: 40px;
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-.image-row {
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-top: 20px;
   flex-wrap: wrap;
 }
 
-.image-row img {
-  max-width: 100%;
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* Title */
+.main-title {
+  font-family: 'Bangers', cursive;
+  font-size: 2.8em;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 20px;
+  position: relative;
+}
+
+.hero-img {
+  max-width: 250px;
   height: auto;
 }
 
-#logo {
-  width: 300px; /* bigger logo to match hooping pic */
+.hero-img.left {
+  transform: scale(1.1);
 }
 
-#shanda {
-  width: 300px;
+.hero-img.right {
+  transform: scale(1.1);
 }
 
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Intro text */
 .intro {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  border-radius: 10px;
   font-size: 1.1em;
   line-height: 1.6;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
 }
