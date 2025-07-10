@@ -34,13 +34,12 @@ body {
 }
 
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   position: relative;
- padding: 30px 40px 100px 40px;
-  min-height: 100vh;
+  text-align: center;
+  margin-top: 20px;  /* Optional: adds small spacing from navbar */
+  padding: 0 40px;
+  min-height: auto;  /* Remove height forcing it to center */
+  display: block;    /* Remove flex behavior */
 }
 
 .intro-content {
