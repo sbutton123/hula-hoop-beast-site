@@ -65,12 +65,12 @@ body {
   position: absolute;
   left: 1in;
   bottom: 20%;
-  height: 900px;
+  height: 1200px;
 }
 
 .logo {
   position: absolute;
-  right: 2in;
+  right: 1in;
   bottom: 20%;
   height: 700px;
 }
