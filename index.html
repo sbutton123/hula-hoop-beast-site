@@ -18,6 +18,33 @@
       background-size: cover;
     }
 
+    /* Top Nav Bar */
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      font-family: 'Bangers', cursive;
+      font-size: 1.3rem;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 6px 12px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #000;
+      border-radius: 4px;
+    }
+
     h1 {
       font-family: 'Bangers', cursive;
       font-size: 4rem;
@@ -77,10 +104,31 @@
       h1 {
         font-size: 3rem;
       }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 1rem;
+        margin: 5px 10px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- Nav Bar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tutorials</a>
+    <a href="#">Beast Moves</a>
+    <a href="#">Programs</a>
+    <a href="#">Workouts</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+  </nav>
+
   <h1>UNLEASH YOUR INNER BEAST!</h1>
 
   <div class="images">
@@ -98,5 +146,6 @@
       Join the movement. Embrace your inner beast. Let’s hoop!
     </p>
   </div>
+
 </body>
 </html>
