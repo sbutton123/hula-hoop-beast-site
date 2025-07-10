@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hula Hoop Beast Homepage</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bangers', cursive;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin-top: 10px;
+    }
+
+    .intro-text {
+      max-width: 600px;
+      font-family: 'Bangers', cursive;
+      font-size: 1.4em;
+    }
+
+    .top-title {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .images-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+    }
+
+    .images-container img {
+      max-height: 400px;
+      height: auto;
+    }
+
+    .left-img {
+      max-height: 500px;
+      margin-right: -30px;
+    }
+
+    .right-img {
+      max-height: 450px;
+    }
+  </style>
 </head>
+
 <body>
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Tutorials</a></li>
-      <li><a href="#">Beast Moves</a></li>
-      <li><a href="#">Programs</a></li>
-      <li><a href="#">Workouts</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Products</a></li>
-    </ul>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tutorials</a>
+    <a href="#">Beast Moves</a>
+    <a href="#">Programs</a>
+    <a href="#">Workouts</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
   </nav>
 
-  <main class="main-content">
-    <div class="left-image">
-      <img src="shanda2.png" alt="Shanda Juggling">
+  <div class="container">
+    <h1 class="top-title">UNLEASH YOUR INNER BEAST!</h1>
+
+    <div class="intro-section">
+      <img src="shanda2.png" alt="Shanda Juggling" class="left-img">
+      <div class="intro-text">
+        Welcome to Hula Hoop Beast — where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let's hoop!
+      </div>
+      <img src="logo.png" alt="Hula Hoop Beast Logo" class="right-img">
     </div>
 
-    <div class="center-content">
-      <h1 class="title">UNLEASH YOUR INNER BEAST!</h1>
-      <img class="main-image" src="shanda.png" alt="Shanda Hooping">
-      <p class="intro">
-        Welcome to Hula Hoop Beast — where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let’s hoop!
-      </p>
+    <div class="images-container">
+      <img src="shanda.png" alt="Shanda Hooping">
     </div>
-
-    <div class="right-image">
-      <img src="logo.png" alt="Hula Hoop Beast Logo">
-      <img src="shanda-performing.png" alt="Shanda Performing">
-    </div>
-  </main>
+  </div>
 </body>
+
 </html>
+
