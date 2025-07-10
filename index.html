@@ -1,95 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hula Hoop Beast Homepage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+  <title>Hula Hoop Beast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('background.png') no-repeat center center fixed;
+      font-family: 'Bangers', cursive;
+      background-image: url('background.png');
       background-size: cover;
-      color: #000;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-
     nav {
-      background-color: #222;
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 10px;
       text-align: center;
     }
-
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.5rem;
     }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
+    .title {
       text-align: center;
+      font-size: 4rem;
+      margin-top: 20px;
+      margin-bottom: 1in;
     }
-
-    .row {
+    .intro-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 20px 0;
+      position: relative;
     }
-
-    .left-img, .right-img {
-      flex: 1;
-    }
-
-    .left-img img {
-      width: 900px; /* 3x size adjustment for Shanda2 */
+    .shanda2 {
+      position: absolute;
+      left: 3in;
+      width: 300px;
       height: auto;
     }
-
-    .right-img img {
-      width: 200px;
-      height: auto;
-    }
-
-    .center-content {
-      flex: 2;
-      padding: 0 30px;
-    }
-
-    h1 {
-      font-family: 'Bangers', cursive;
-      font-size: 64px;
-      margin: 30px auto 1in;
+    .intro {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 2rem;
       text-align: center;
-    }
-
-    .intro-paragraph {
-      font-family: 'Bangers', cursive;
-      font-size: 26px;
-      max-width: 900px;
-      margin: 0 auto 40px;
-      text-align: center;
-    }
-
-    .bottom-img {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .bottom-img img {
-      width: 350px;
-      height: auto;
+      z-index: 1;
     }
   </style>
 </head>
-
 <body>
   <nav>
     <a href="#">Home</a>
@@ -101,25 +63,15 @@
     <a href="#">Products</a>
   </nav>
 
-  <h1>UNLEASH YOUR INNER BEAST!</h1>
+  <div class="title">UNLEASH YOUR INNER BEAST!</div>
 
-  <p class="intro-paragraph">
-    Welcome to Hula Hoop Beast — where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let's hoop!
-  </p>
-
-  <div class="container">
-    <div class="row">
-      <div class="left-img">
-        <img src="shanda2.png" alt="Shanda Juggling" />
-      </div>
-      <div class="right-img">
-        <img src="logo.png" alt="Hula Hoop Beast Logo" />
-      </div>
-    </div>
-    <div class="bottom-img">
-      <img src="shanda.png" alt="Shanda Hooping" />
+  <div class="intro-container">
+    <img src="shanda2.png" alt="Shanda juggling" class="shanda2">
+    <div class="intro">
+      Welcome to Hula Hoop Beast!<br />
+      Where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic.<br />
+      Join the movement. Embrace your inner beast. Let's hoop!
     </div>
   </div>
 </body>
-
 </html>
