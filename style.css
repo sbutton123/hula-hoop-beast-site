@@ -76,7 +76,7 @@ body {
 
 .shanda {
   position: absolute;
-  bottom: 5%;
+  bottom: 25%;
   left: 50%;
   transform: translateX(-50%);
   height: 280px;
