@@ -2,113 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hula Hoop Beast</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: black;
-    }
-
-    nav {
-      background: #2f3a40;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      font-weight: bold;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    .hero-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .side-image {
-      position: absolute;
-      width: 180px;
-    }
-
-    .side-image.left {
-      left: 0;
-      top: 40%;
-    }
-
-    .side-image.right {
-      right: 0;
-      top: 40%;
-    }
-
-    .center-content {
-      max-width: 650px;
-      margin: auto;
-    }
-
-    .center-image {
-      width: 200px;
-    }
-
-    .logo-image {
-      width: 160px;
-      margin-top: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-family: Impact, sans-serif;
-      margin-bottom: 20px;
-    }
-
-    .intro-text {
-      font-size: 1rem;
-      font-weight: bold;
-      line-height: 1.6;
-      padding: 0 15px;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Tutorials</a>
-    <a href="#">Beast Moves</a>
-    <a href="#">Programs</a>
-    <a href="#">Workouts</a>
-    <a href="#">About</a>
-    <a href="#">Products</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tutorials</a></li>
+      <li><a href="#">Beast Moves</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Workouts</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+    </ul>
   </nav>
 
-  <div class="hero-section">
-    <img src="shanda-left.png" alt="Shanda Juggling" class="side-image left">
+  <!-- Header -->
+  <h1 class="title">UNLEASH YOUR INNER BEAST!</h1>
 
-    <div class="center-content">
-      <h1>UNLEASH YOUR INNER BEAST!</h1>
-      <img src="shanda-center.png" alt="Shanda Hooping" class="center-image">
-      <img src="hulahoop-logo.png" alt="Hula Hoop Beast Logo" class="logo-image">
+  <!-- Image Row -->
+  <div class="image-row">
+    <img src="shanda2.png" alt="Shanda Juggling" class="side-image" />
+    <img src="shanda.png" alt="Shanda Hooping" class="center-image" />
+    <img src="logo.png" alt="Hula Hoop Beast Logo" class="side-image" />
+  </div>
 
-      <p class="intro-text">
-        WELCOME TO HULA HOOP BEAST — WHERE STRENGTH MEETS FLOW AND FUN TURNS INTO FITNESS!
-        WHETHER YOU’RE BRAND NEW TO HOOPING OR READY TO LEVEL UP YOUR SKILLS, YOU’RE IN THE RIGHT PLACE.
-        DIVE INTO OUR TUTORIALS, CHALLENGE YOURSELF WITH WORKOUTS, OR JUST GET INSPIRED BY CREATIVE PERFORMANCES AND HOOP MAGIC.
-        JOIN THE MOVEMENT. EMBRACE YOUR INNER BEAST. LET’S HOOP!
-      </p>
-    </div>
-
-    <img src="shanda-right.png" alt="Shanda Performing" class="side-image right">
+  <!-- Intro Paragraph -->
+  <div class="intro">
+    <p><strong>WELCOME TO HULA HOOP BEAST —</strong> where strength meets flow and fun turns into fitness! Whether you’re brand new to hooping or ready to level up your skills, you’re in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let’s hoop!</p>
   </div>
 </body>
 </html>
