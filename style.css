@@ -60,8 +60,10 @@ body {
 
 .intro-content {
   text-align: center;
-  flex: 1;
   font-family: 'Bangers', cursive;
+  max-width: 800px;    /* Add this */
+  margin: 0 auto;       /* Center it horizontally */
+  padding: 0 20px;      /* Optional: side padding on smaller screens */
 }
 
 .intro-content h1 {
