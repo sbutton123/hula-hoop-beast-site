@@ -4,63 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hula Hoop Beast</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: url('background.png') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #000;
-      text-align: center;
+      color: black;
     }
 
     nav {
-      background-color: #1f2a30;
-      padding: 15px 0;
+      background: #2f3a40;
       display: flex;
       justify-content: center;
       gap: 30px;
+      padding: 15px 0;
+      font-weight: bold;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      font-style: italic;
-      font-size: 16px;
+      font-size: 1.1rem;
+    }
+
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .side-image {
+      position: absolute;
+      width: 180px;
+    }
+
+    .side-image.left {
+      left: 0;
+      top: 40%;
+    }
+
+    .side-image.right {
+      right: 0;
+      top: 40%;
+    }
+
+    .center-content {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .center-image {
+      width: 200px;
+    }
+
+    .logo-image {
+      width: 160px;
+      margin-top: 20px;
     }
 
     h1 {
-      font-family: 'Bangers', cursive;
-      font-size: 48px;
-      margin-top: 20px;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      font-family: Impact, sans-serif;
+      margin-bottom: 20px;
     }
 
-    .main-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-
-    .main-content img {
-      max-width: 220px;
-      height: auto;
-    }
-
-    .intro {
-      max-width: 800px;
-      margin: 30px auto;
+    .intro-text {
+      font-size: 1rem;
       font-weight: bold;
-      font-style: italic;
-      line-height: 1.7;
-      font-size: 16px;
-      padding: 0 20px;
+      line-height: 1.6;
+      padding: 0 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -75,21 +92,23 @@
     <a href="#">Products</a>
   </nav>
 
-  <h1>UNLEASH YOUR INNER BEAST!</h1>
+  <div class="hero-section">
+    <img src="shanda-left.png" alt="Shanda Juggling" class="side-image left">
 
-  <div class="main-content">
-    <img src="shanda2.png" alt="Juggling Hoops">
-    <img src="67d59ed7-e290-423a-9d97-f38295947045.png" alt="Hooping Picture">
-    <img src="440ef09f-3ef4-485f-bb8a-875d557209a6.png" alt="Hula Hoop Beast Logo">
-  </div>
+    <div class="center-content">
+      <h1>UNLEASH YOUR INNER BEAST!</h1>
+      <img src="shanda-center.png" alt="Shanda Hooping" class="center-image">
+      <img src="hulahoop-logo.png" alt="Hula Hoop Beast Logo" class="logo-image">
 
-  <div class="intro">
-    <p>
-      WELCOME TO HULA HOOP BEAST — WHERE STRENGTH MEETS FLOW AND FUN TURNS INTO FITNESS!
-      WHETHER YOU'RE BRAND NEW TO HOOPING OR READY TO LEVEL UP YOUR SKILLS, YOU'RE IN THE RIGHT PLACE.
-      DIVE INTO OUR TUTORIALS, CHALLENGE YOURSELF WITH WORKOUTS, OR JUST GET INSPIRED BY CREATIVE PERFORMANCES AND HOOP MAGIC.
-      JOIN THE MOVEMENT. EMBRACE YOUR INNER BEAST. LET'S HOOP!
-    </p>
+      <p class="intro-text">
+        WELCOME TO HULA HOOP BEAST — WHERE STRENGTH MEETS FLOW AND FUN TURNS INTO FITNESS!
+        WHETHER YOU’RE BRAND NEW TO HOOPING OR READY TO LEVEL UP YOUR SKILLS, YOU’RE IN THE RIGHT PLACE.
+        DIVE INTO OUR TUTORIALS, CHALLENGE YOURSELF WITH WORKOUTS, OR JUST GET INSPIRED BY CREATIVE PERFORMANCES AND HOOP MAGIC.
+        JOIN THE MOVEMENT. EMBRACE YOUR INNER BEAST. LET’S HOOP!
+      </p>
+    </div>
+
+    <img src="shanda-right.png" alt="Shanda Performing" class="side-image right">
   </div>
 </body>
 </html>
