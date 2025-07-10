@@ -36,10 +36,10 @@ body {
 .hero-section {
   position: relative;
   text-align: center;
-  margin-top: 20px;  /* Optional: adds small spacing from navbar */
+  margin-top: 20px;
   padding: 0 40px;
-  min-height: auto;  /* Remove height forcing it to center */
-  display: block;    /* Remove flex behavior */
+  min-height: auto;
+  display: block;
 }
 
 .intro-content {
@@ -60,28 +60,17 @@ body {
   font-family: 'Bangers', cursive;
 }
 
-.shanda2 {
-  position: absolute;
-  left: 1.5in;
-  top: -150px; /* change this number to move it vertically */
-  height: 1250px; /* increase this number to make it bigger */
-}
-
-.logo {
-  position: absolute;
-  right: 1in;
-  bottom: -75%;
-  height: 700px;
-}
-
+.shanda2,
+.logo,
 .shanda {
-  position: absolute;
-  bottom: -125%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 500px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 20px auto;
 }
-/* For tablets and phones */
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .intro-content {
     padding: 0 20px;
@@ -95,12 +84,6 @@ body {
 
   .intro-content p {
     font-size: 1em;
-  }
-
-  .shanda2,
-  .shanda,
-  .logo {
-    display: none;  /* Hide huge images on small screens */
   }
 
   .navbar ul {
