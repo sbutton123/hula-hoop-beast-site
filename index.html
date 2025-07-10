@@ -3,88 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hula Hoop Beast</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googlea<!DOCTYPE html>
-<html lang="en">
+  <title>Hula Hoop Beast Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('logo.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Arial', sans-serif;
+      color: #000;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hula Hoop Beast Homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Bangers', cursive;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: bold;
+      max-width: 700px;
+      margin-top: 1in;
+    }
+
+    .hero-images {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .hero-images img {
+      max-height: 350px;
+    }
+
+    .left-img {
+      margin-left: 40px;
+    }
+
+    .right-img {
+      margin-right: 40px;
+    }
+  </style>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Beast Moves</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Workouts</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-        </ul>
-    </nav>
-</body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tutorials</a>
+    <a href="#">Beast Moves</a>
+    <a href="#">Programs</a>
+    <a href="#">Workouts</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+  </nav>
 
-</html>
-pis.com/css2?family=Banger<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hula Hoop Beast Homepage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Beast Moves</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Workouts</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
-s&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tutorials</a></li>
-        <li><a href="#">Beast Moves</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Workouts</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main-container">
-    <div class="images-left">
-      <img src="shanda2.png" alt="Shanda Juggling" class="left-image" />
+  <section class="hero">
+    <h1>UNLEASH YOUR INNER BEAST!</h1>
+    <p>
+      WELCOME TO HULA HOOP BEAST — WHERE STRENGTH MEETS FLOW AND FUN TURNS INTO FITNESS! WHETHER YOU’RE BRAND NEW TO HOOPING OR READY TO LEVEL UP YOUR SKILLS, YOU’RE IN THE RIGHT PLACE. DIVE INTO OUR TUTORIALS, CHALLENGE YOURSELF WITH WORKOUTS, OR JUST GET INSPIRED BY CREATIVE PERFORMANCES AND HOOP MAGIC. JOIN THE MOVEMENT. EMBRACE YOUR INNER BEAST. LET’S HOOP!
+    </p>
+    <div class="hero-images">
+      <img src="shanda2.png" alt="Juggling Shanda" class="left-img" />
+      <img src="shanda.png" alt="Hooping Shanda" />
+      <img src="logo.png" alt="Hula Hoop Beast Logo" class="right-img" />
     </div>
-
-    <div class="content-center">
-      <h1 class="title">UNLEASH YOUR INNER BEAST!</h1>
-      <p class="intro-paragraph">
-        Welcome to Hula Hoop Beast — where strength meets flow and fun turns into fitness! Whether you're brand new to hooping or ready to level up your skills, you're in the right place. Dive into our tutorials, challenge yourself with workouts, or just get inspired by creative performances and hoop magic. Join the movement. Embrace your inner beast. Let’s hoop!
-      </p>
-    </div>
-
-    <div class="images-right">
-      <img src="logo.png" alt="Logo" class="right-image" />
-    </div>
-  </main>
+  </section>
 </body>
 </html>
