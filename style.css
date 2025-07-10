@@ -78,6 +78,6 @@ body {
   position: absolute;
   bottom: -100%;
   left: 50%;
-  transform: translateX(0%);
-  height: 280px;
+  transform: translateX(-25%);
+  height: 600px;
 }
